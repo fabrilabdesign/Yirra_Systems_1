@@ -6,83 +6,151 @@
     <title>AA3 Drone Project</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
         }
         header {
-            background-color: #1a3c34;
-            color: white;
-            text-align: center;
-            padding: 2em;
+            background-color: #0a0a0a;
+            border-bottom: 1px solid #333;
+            padding: 1.5em 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        nav {
-            background-color: #2e5e54;
-            padding: 1em;
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2em;
+        }
+        .header-content h1 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #00ff88; /* Neon green from your scheme */
         }
         nav a {
-            color: white;
-            margin: 0 1em;
+            color: #ffffff;
             text-decoration: none;
-            font-weight: bold;
+            margin-left: 2em;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #a8dadc;
+            color: #ff1744; /* Neon red from your scheme */
         }
         .container {
-            max-width: 1000px;
-            margin: 2em auto;
-            padding: 0 1em;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
         }
-        .hero-image, .gallery-image {
+        .hero {
+            text-align: center;
+            padding: 4em 0;
+            background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
+        }
+        .hero h2 {
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 0.5em;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #a0a0a0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-image {
             width: 100%;
-            max-width: 600px;
+            max-width: 700px;
             height: auto;
+            margin-top: 2em;
             border-radius: 8px;
-            margin: 1em 0;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1em;
-            justify-content: center;
+            border: 1px solid #333;
         }
         .section {
-            margin: 2em 0;
+            padding: 3em 0;
         }
         .section h2 {
-            color: #1a3c34;
+            font-size: 2em;
+            font-weight: 700;
+            color: #00ff88;
+            margin-bottom: 1em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            font-size: 1.1em;
+            margin: 1em 0;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        ul li::before {
+            content: "→";
+            color: #ff1744;
+            position: absolute;
+            left: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5em;
+            margin-top: 2em;
+        }
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+        a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff1744;
         }
         footer {
-            background-color: #1a3c34;
-            color: white;
+            background-color: #0a0a0a;
+            border-top: 1px solid #333;
             text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 1.5em;
+            color: #a0a0a0;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>AA3 Drone Project</h1>
-        <p>A High-Performance 3D-Printed 8-Inch Drone</p>
+        <div class="header-content">
+            <h1>AA3 Drone Project</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
     <div class="container">
-        <section id="home" class="section">
+        <section id="home" class="hero">
+            <h2>AA3 Drone Project</h2>
+            <p>A High-Performance 8-Inch Drone, 3D-Printed for Durability and Innovation</p>
             <img src="M2mb2354b.png" alt="AA3 Drone" class="hero-image">
-            <h2>Welcome to the AA3 Drone Project</h2>
-            <p>The AA3 is a high-performance 8-inch drone, 3D-printed with carbon fiber nylon, designed for durability and repairability. It features a modular 6S battery system with Molicel P50B cells, an on-button with MOSFET power management, and is built to carry an O4 Pro air unit.</p>
         </section>
         <section id="features" class="section">
             <h2>Drone Features</h2>
