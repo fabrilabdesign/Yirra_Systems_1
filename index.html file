@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1a3c34;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        nav {
+            background-color: #2e5e54;
+            padding: 1em;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #a8dadc;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .section {
+            margin: 2em 0;
+        }
+        .section h2 {
+            color: #1a3c34;
+        }
+        footer {
+            background-color: #1a3c34;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drone Project</h1>
+        <p>Exploring the Future of Aerial Technology</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <img src="https://via.placeholder.com/1000x400?text=Drone+Image" alt="Drone" class="hero-image">
+            <h2>Welcome to the Drone Project</h2>
+            <p>This project showcases a cutting-edge drone designed for versatility and performance. Explore its features, learn about its development, and get in touch to collaborate or learn more.</p>
+        </section>
+        <section id="features" class="section">
+            <h2>Drone Features</h2>
+            <ul>
+                <li>4K Ultra HD Camera with Gimbal Stabilization</li>
+                <li>Up to 40 Minutes of Flight Time</li>
+                <li>GPS-Assisted Navigation and Return-to-Home</li>
+                <li>Obstacle Avoidance Sensors</li>
+                <li>Customizable Flight Modes for Beginners and Experts</li>
+            </ul>
+        </section>
+        <section id="about" class="section">
+            <h2>About the Project</h2>
+            <p>Developed as an open-source initiative, this drone project aims to push the boundaries of aerial technology. Hosted on GitHub, it welcomes contributions from developers, engineers, and enthusiasts worldwide.</p>
+            <p>Check out the repository: <a href="https://github.com/yourusername/drone-project">GitHub Repo</a></p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to contribute? Reach out via email at <a href="mailto:your.email@example.com">your.email@example.com</a> or open an issue on our GitHub repository.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Drone Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
