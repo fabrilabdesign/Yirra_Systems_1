@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drone Project</title>
+    <title>AA3 Drone Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,10 +36,18 @@
             margin: 2em auto;
             padding: 0 1em;
         }
-        .hero-image {
+        .hero-image, .gallery-image {
             width: 100%;
+            max-width: 600px;
             height: auto;
             border-radius: 8px;
+            margin: 1em 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
         }
         .section {
             margin: 2em 0;
@@ -60,35 +68,47 @@
 </head>
 <body>
     <header>
-        <h1>Drone Project</h1>
-        <p>Exploring the Future of Aerial Technology</p>
+        <h1>AA3 Drone Project</h1>
+        <p>A High-Performance 3D-Printed 8-Inch Drone</p>
     </header>
     <nav>
         <a href="#home">Home</a>
         <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
         <section id="home" class="section">
-            <img src="https://via.placeholder.com/1000x400?text=Drone+Image" alt="Drone" class="hero-image">
-            <h2>Welcome to the Drone Project</h2>
-            <p>This project showcases a cutting-edge drone designed for versatility and performance. Explore its features, learn about its development, and get in touch to collaborate or learn more.</p>
+            <img src="M2mb2354b.png" alt="AA3 Drone" class="hero-image">
+            <h2>Welcome to the AA3 Drone Project</h2>
+            <p>The AA3 is a high-performance 8-inch drone, 3D-printed with carbon fiber nylon, designed for durability and repairability. It features a modular 6S battery system with Molicel P50B cells, an on-button with MOSFET power management, and is built to carry an O4 Pro air unit.</p>
         </section>
         <section id="features" class="section">
             <h2>Drone Features</h2>
             <ul>
-                <li>4K Ultra HD Camera with Gimbal Stabilization</li>
-                <li>Up to 40 Minutes of Flight Time</li>
-                <li>GPS-Assisted Navigation and Return-to-Home</li>
-                <li>Obstacle Avoidance Sensors</li>
-                <li>Customizable Flight Modes for Beginners and Experts</li>
+                <li>8-inch drone with carbon fiber nylon body and TPU camera mount</li>
+                <li>Resin-printed top cover for sleek design</li>
+                <li>Modular 6S battery with Molicel P50B cells</li>
+                <li>On-button with MOSFET for efficient power management</li>
+                <li>Designed for O4 Pro air unit compatibility</li>
+                <li>Powered by iFlight E555 ESC and 2807 motors with 8-inch props</li>
+                <li>Partially open-source for easy repairs after crashes</li>
             </ul>
+        </section>
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="M2mb2351b.png" alt="AA3 Drone Side View" class="gallery-image">
+                <img src="M2mb2350b.png" alt="AA3 Drone Top View" class="gallery-image">
+                <img src="M2mb2344b.png" alt="AA3 Drone Assembly" class="gallery-image">
+                <img src="M2mb2338b.png" alt="AA3 Drone Flight Test" class="gallery-image">
+            </div>
         </section>
         <section id="about" class="section">
             <h2>About the Project</h2>
-            <p>Developed as an open-source initiative, this drone project aims to push the boundaries of aerial technology. Hosted on GitHub, it welcomes contributions from developers, engineers, and enthusiasts worldwide.</p>
-            <p>Check out the repository: <a href="https://github.com/yourusername/drone-project">GitHub Repo</a></p>
+            <p>The AA3 Drone Project is a partially open-source initiative aimed at delivering a rugged, high-performance drone that can be 3D-printed and repaired by enthusiasts. The carbon fiber nylon frame, TPU camera mount, and resin top cover ensure durability, while the modular design allows for easy upgrades and repairs.</p>
+            <p>Check out the repository: <a href="https://github.com/yourusername/aa3-drone-project">GitHub Repo</a></p>
         </section>
         <section id="contact" class="section">
             <h2>Contact Us</h2>
@@ -96,7 +116,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2025 Drone Project. All rights reserved.</p>
+        <p>© 2025 AA3 Drone Project. All rights reserved.</p>
     </footer>
 </body>
 </html>
